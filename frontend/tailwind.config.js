@@ -1,3 +1,5 @@
+const { Container } = require("postcss");
+
 module.exports = {
   content: [
     "./public/index.html",
@@ -5,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    container: {
+      padding: "10rem",
+    }
   },
   plugins: [],
 };
