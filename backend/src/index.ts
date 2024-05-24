@@ -12,7 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors()); // Consider configuring CORS for specific origins if necessary
 
 app.use("/api/users", userRoutes);
-console.log(process.env.JWT_SECRET_KEY);
 
 app.listen(7000, () => {
   console.log("Server is running on localhost:7000");
